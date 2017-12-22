@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Font?>
+<GridPane stylesheets="/styles/game.css" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spinner.Controller">
+    <children>
+        <Pane prefHeight="450.0" prefWidth="850.0" GridPane.rowIndex="1">
+            <children>
+                <ImageView fitHeight="400.0" fitWidth="350.0" layoutX="420.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" >
+                    <image>
+                        <Image url="/Container0.png"/>
+                    </image>
+                </ImageView>
+                <TabPane styleClass="tabs-panel" layoutX="420.0" layoutY="15.0" prefHeight="400.0" prefWidth="350.0" tabClosingPolicy="UNAVAILABLE" tabMaxWidth="400.0"><tabs>
+                    <Tab styleClass="skins-tab" text="Skins">
+                        <content>
+                                    <AnchorPane id="Panel" minHeight="10.0" minWidth="10.0" prefHeight="370.0" prefWidth="400.0">
+                                        <children>
+                                            <ImageView fx:id="ivo0" fitHeight="90.0" fitWidth="90.0" layoutX="15.0" layoutY="5.0" onMousePressed="#Buys1" pickOnBounds="true" preserveRatio="true"/>
+                                            <Label fx:id="priceo0" text="" layoutX="35.0" layoutY="93.0" textAlignment="CENTER" textFill="#fc00ff">
+                                                <font>
+                                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                                </font>
+                                            </Label>
+                                            <ImageView fx:id="ivo1" fitHeight="90.0" fitWidth="90.0" layoutX="125.0" layoutY="5.0" onMousePressed="#Buys2" pickOnBounds="true" preserveRatio="true"/>
+                                            <Label fx:id="priceo1" text="" layoutX="145.0" layoutY="93.0" textAlignment="CENTER" textFill="#fc00ff">
+                                                <font>
+                                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                                </font>
+                                            </Label>
+                                            <ImageView fx:id="ivo2"  fitHeight="90.0" fitWidth="90.0" layoutX="230.0" layoutY="5.0" onMousePressed="#Buys3" pickOnBounds="true" preserveRatio="true"/>
+                                            <Label fx:id="priceo2" text="" layoutX="255.0" layoutY="93.0" textAlignment="CENTER" textFill="#fc00ff">
+                                                <font>
+                                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                                </font>
+                                            </Label>
+
+                                            <ImageView fx:id="ivo3" fitHeight="90.0" fitWidth="90.0" layoutX="15" layoutY="135.0" onMousePressed="#Buys4" pickOnBounds="true" preserveRatio="true"/>
+                                            <Label fx:id="priceo3" text="" layoutX="35.0" layoutY="220.0" textAlignment="CENTER" textFill="#fc00ff">
+                                                <font>
+                                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                                </font>
+                                            </Label>
+                                            <ImageView fx:id="ivo4"  fitHeight="90.0" fitWidth="90.0" layoutX="125.0" layoutY="135.0" onMousePressed="#Buys5" pickOnBounds="true" preserveRatio="true"/>
+                                            <Label fx:id="priceo4" text="" layoutX="145.0" layoutY="220.0" textAlignment="CENTER" textFill="#fc00ff">
+                                                <font>
+                                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                                </font>
+                                            </Label>
+                                            <ImageView fx:id="ivo5" fitHeight="90.0" fitWidth="90.0" layoutX="230.0" layoutY="135.0" onMousePressed="#Buys6" pickOnBounds="true" preserveRatio="true"/>
+                                            <Label fx:id="priceo5" text="" layoutX="245.0" layoutY="220.0" textAlignment="CENTER" textFill="#fc00ff">
+                                                <font>
+                                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                                </font>
+                                            </Label>
+
+                                            <ImageView fx:id="ivo6" fitHeight="90.0" fitWidth="90.0" layoutX="15" layoutY="260.0" onMousePressed="#Buys7" pickOnBounds="true" preserveRatio="true"/>
+                                            <Label fx:id="priceo6" text="" layoutX="30.0" layoutY="335.0" textAlignment="CENTER" textFill="#fc00ff">
+                                                <font>
+                                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                                </font>
+                                            </Label>
+                                            <ImageView fx:id="ivo7" fitHeight="90.0" fitWidth="90.0" layoutX="125" layoutY="260.0" onMousePressed="#Buys8" pickOnBounds="true" preserveRatio="true"/>
+                                            <Label fx:id="priceo7" text="" layoutX="140.0" layoutY="335.0" textAlignment="CENTER" textFill="#fc00ff">
+                                                <font>
+                                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                                </font>
+                                            </Label>
+                                            <ImageView fx:id="ivo8" fitHeight="90.0" fitWidth="90.0" layoutX="230" layoutY="260.0" onMousePressed="#Buys9" pickOnBounds="true" preserveRatio="true"/>
+                                            <Label fx:id="priceo8" text="" layoutX="245.0" layoutY="335.0" textAlignment="CENTER" textFill="#fc00ff">
+                                                <font>
+                                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                                </font>
+                                            </Label>
+
+                                            <ProgressBar fx:id="progressoBar" layoutX="180.0" layoutY="175.0" prefWidth="320.0" prefHeight="20" progress="0.5" rotate="90.0" />
+                                            <Button layoutX="330.0" layoutY="0.0" minWidth="20.0" mnemonicParsing="false" prefWidth="9.0" text="↑" onAction="#previousoButton"/>
+                                            <Button fx:id="nextBt" layoutX="330.0" layoutY="345.0" minWidth="20.0" mnemonicParsing="false" prefWidth="9.0" text="↓" onAction="#nextoButton"/>
+                                        </children>
+                                    </AnchorPane>
+                     </content>
+                 </Tab>
+                    <Tab styleClass="bg-tab" text="Backgrounds">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="350.0">
+                            <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="15.0" layoutY="5.0" onMousePressed="#bgBuy1" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="/Backgrounds/Background0.jpg" backgroundLoading="true"/>
+                                </image>
+                            </ImageView>
+                            <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="125.0" layoutY="5.0" onMousePressed="#bgBuy2" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="/Backgrounds/Background1.jpg" backgroundLoading="true"/>
+                                </image>
+                            </ImageView>
+                            <Label fx:id="pric1" layoutX="155.0" layoutY="70.0" text="500฿" textAlignment="CENTER" textFill="#fc00ff">
+                                <font>
+                                    <Font name="Bodoni MT Black" size="22.0"/>
+                                </font>
+                            </Label>
+                        </AnchorPane>
+                    </content>
+                        </Tab>
+                    <Tab styleClass="bearings-tab" text="Bearings">
+                        <content>
+                            <Pane fx:id="bearingPanel" prefHeight="370.0" prefWidth="400.0">
+                                <children>
+                                    <ImageView fx:id="iv0" fitHeight="90.0" fitWidth="90.0" layoutX="15.0" layoutY="5.0" onMousePressed="#Buy1" pickOnBounds="true" preserveRatio="true"/>
+                                    <Label fx:id="price0" text="" layoutX="35.0" layoutY="93.0" textAlignment="CENTER" textFill="#fc00ff">
+                                        <font>
+                                            <Font name="Bodoni MT Black" size="22.0"/>
+                                        </font>
+                                    </Label>
+                                    <ImageView fx:id="iv1" fitHeight="90.0" fitWidth="90.0" layoutX="125.0" layoutY="5.0" onMousePressed="#Buy2" pickOnBounds="true" preserveRatio="true"/>
+                                    <Label fx:id="price1" text="" layoutX="145.0" layoutY="93.0" textAlignment="CENTER" textFill="#fc00ff">
+                                        <font>
+                                            <Font name="Bodoni MT Black" size="22.0"/>
+                                        </font>
+                                    </Label>
+                                    <ImageView fx:id="iv2"  fitHeight="90.0" fitWidth="90.0" layoutX="230.0" layoutY="5.0" onMousePressed="#Buy3" pickOnBounds="true" preserveRatio="true"/>
+                                    <Label fx:id="price2" text="" layoutX="255.0" layoutY="93.0" textAlignment="CENTER" textFill="#fc00ff">
+                                        <font>
+                                            <Font name="Bodoni MT Black" size="22.0"/>
+                                        </font>
+                                    </Label>
+
+                                    <ImageView fx:id="iv3" fitHeight="90.0" fitWidth="90.0" layoutX="15" layoutY="135.0" onMousePressed="#Buy4" pickOnBounds="true" preserveRatio="true"/>
+                                    <Label fx:id="price3" text="" layoutX="35.0" layoutY="220.0" textAlignment="CENTER" textFill="#fc00ff">
+                                        <font>
+                                            <Font name="Bodoni MT Black" size="22.0"/>
+                                        </font>
+                                    </Label>
+                                    <ImageView fx:id="iv4"  fitHeight="90.0" fitWidth="90.0" layoutX="125.0" layoutY="135.0" onMousePressed="#Buy5" pickOnBounds="true" preserveRatio="true"/>
+                                    <Label fx:id="price4" text="" layoutX="145.0" layoutY="220.0" textAlignment="CENTER" textFill="#fc00ff">
+                                        <font>
+                                            <Font name="Bodoni MT Black" size="22.0"/>
+                                        </font>
+                                    </Label>
+                                    <ImageView fx:id="iv5" fitHeight="90.0" fitWidth="90.0" layoutX="230.0" layoutY="135.0" onMousePressed="#Buy6" pickOnBounds="true" preserveRatio="true"/>
+                                    <Label fx:id="price5" text="" layoutX="245.0" layoutY="220.0" textAlignment="CENTER" textFill="#fc00ff">
+                                        <font>
+                                            <Font name="Bodoni MT Black" size="22.0"/>
+                                        </font>
+                                    </Label>
+
+                                    <ImageView fx:id="iv6" fitHeight="90.0" fitWidth="90.0" layoutX="15" layoutY="260.0" onMousePressed="#Buy7" pickOnBounds="true" preserveRatio="true"/>
+                                    <Label fx:id="price6" text="" layoutX="30.0" layoutY="335.0" textAlignment="CENTER" textFill="#fc00ff">
+                                        <font>
+                                            <Font name="Bodoni MT Black" size="22.0"/>
+                                        </font>
+                                    </Label>
+                                    <ImageView fx:id="iv7" fitHeight="90.0" fitWidth="90.0" layoutX="125" layoutY="260.0" onMousePressed="#Buy8" pickOnBounds="true" preserveRatio="true"/>
+                                    <Label fx:id="price7" text="" layoutX="140.0" layoutY="335.0" textAlignment="CENTER" textFill="#fc00ff">
+                                        <font>
+                                            <Font name="Bodoni MT Black" size="22.0"/>
+                                        </font>
+                                    </Label>
+                                    <ImageView fx:id="iv8" fitHeight="90.0" fitWidth="90.0" layoutX="230" layoutY="260.0" onMousePressed="#Buy9" pickOnBounds="true" preserveRatio="true"/>
+                                    <Label fx:id="price8" text="" layoutX="245.0" layoutY="335.0" textAlignment="CENTER" textFill="#fc00ff">
+                                        <font>
+                                            <Font name="Bodoni MT Black" size="22.0"/>
+                                        </font>
+                                    </Label>
+
+                                    <ProgressBar fx:id="progressBar" layoutX="180.0" layoutY="175.0" prefWidth="320.0" prefHeight="20" progress="0.5" rotate="90.0" />
+                                    <Button layoutX="330.0" layoutY="0.0" minWidth="20.0" mnemonicParsing="false" prefWidth="9.0" text="↑" onAction="#previousButton"/>
+                                    <Button fx:id="nextBt1" layoutX="330.0" layoutY="345.0" minWidth="20.0" mnemonicParsing="false" prefWidth="9.0" text="↓" onAction="#nextButton"/>
+                                </children>
+                            </Pane>
+                        </content>
+                    </Tab>
+            </tabs>
+                </TabPane>
+                <Button layoutY="415.0" mnemonicParsing="false" text="Spin" styleClass="spin-button" onAction="#spinButton"/>
+                <Button layoutX="52.0" layoutY="415.0" mnemonicParsing="false" text="Stop" styleClass="stop-button" onAction="#stopButton"/>
+
+            </children></Pane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

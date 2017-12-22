@@ -1,0 +1,21 @@
+.button{
+    -fx-color: #fc00ff;
+}
+.score{
+    -fx-font-size:25pt;
+}
+.Panel{
+    -fx-backgrond-image: url("Container.png")
+}
+.skins-tab{
+    -fx-background-color: #fc00ff;
+}
+.bg-tab{
+    -fx-background-color: #fc00ff;
+}
+.bearings-tab{
+    -fx-background-color: #fc00ff;
+}
+.tabs-panel{
+    -fx-color: #0C00FF;
+}

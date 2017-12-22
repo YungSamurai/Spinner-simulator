@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GridPane stylesheets="/styles/game.css" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="450.0" GridPane.rowIndex="1">
+         <children>
+            <Button layoutY="415.0" mnemonicParsing="false" text="Spin" styleClass="spin-button" onAction="#spinButton"/>
+            <Button layoutX="52.0" layoutY="415.0" mnemonicParsing="false" text="Stop" styleClass="stop-button" onAction="#stopButton"/>
+            <Button layoutX="331.0" layoutY="415.0" mnemonicParsing="false" text="Skin store" styleClass="next-button" onAction="#storeButton"/>
+         </children></Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
